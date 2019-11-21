@@ -116,7 +116,6 @@ function imagePopUp(){
 
     }
 
-    
 };//end imagePopUp function
 
 //linking everything to submit button
