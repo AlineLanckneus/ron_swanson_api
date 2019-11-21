@@ -1,3 +1,4 @@
+//main variables
 const quoteValue1 = document.querySelector(".quote1");
 const quoteValue2 = document.querySelector(".quote2");
 const quoteValue3 = document.querySelector(".quote3");
@@ -5,6 +6,7 @@ const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
 let imageSelector = document.querySelector(".pyramid");
+let messageSelector = document.querySelector("#message");
 let src1 = "/images/ron-swanson-bottom-arrow.png";
 let src2 = "/images/ron-swanson-middle-arrow.png";
 let src3 = "/images/ron-swanson-top-arrow.png";
@@ -35,14 +37,14 @@ async function quoteGenerator(){
                 newArray.unshift(quote);
             }
         });//end of foreach
-
+        //sorts the array of quotes in a fixed and alphabetical way
         newArray.sort();                                 
         for (let i = 0; i < newArray.length; i++) {
             //console.log(newArray[i]);
             //newArray[i]=string
             //console.log(newArray[0]);
-            
         }//end of for loop
+        //assigning quotes to variables
         let firstQuote = newArray[0];
         let secondQuote = newArray[1];
         let thirdQuote = newArray[2];
@@ -55,6 +57,7 @@ async function quoteGenerator(){
         console.log(fourthQuote);
         console.log(fifthQuote);
 */
+        //replacing keyword by blank space
         let one = firstQuote.replace('Capitalism','__________ ');
         let two = secondQuote.replace('alcohols', '________');
         let three = thirdQuote.replace('Creativity', '__________');
@@ -65,7 +68,7 @@ async function quoteGenerator(){
         console.log(three);
         console.log(four);
         console.log(five);
-
+        //assigning each corresponding html element with a quote
         quoteValue1.innerHTML = one;
         quoteValue2.innerHTML = two;
         quoteValue3.innerHTML = three;
@@ -76,13 +79,14 @@ async function quoteGenerator(){
 
 quoteGenerator();
 
+//declaring variables equal to different inputs
 let inputValue1 = document.getElementById("input1");
 let inputValue2 = document.getElementById("input2");
 let inputValue3 = document.getElementById("input3");
 let inputValue4 = document.getElementById("input4");
 let inputValue5 = document.getElementById("input5");
 
-
+//checks if answers are correct and adds to score
 function imagePopUp(){
     let counter = 0;
 
@@ -97,7 +101,7 @@ function imagePopUp(){
     if (inputValue5.value === 'Turkey' && inputValue5.value !== null){
         counter++};
     console.log(counter);
-    
+    //displaying different image for each score
     if(counter >= 4){
         console.log("winner!")
         imageSelector.src = src3;
@@ -112,9 +116,10 @@ function imagePopUp(){
 
     }
 
-    //document.querySelector(".pyramid").src = imageUrl;
-};
+    
+};//end imagePopUp function
 
+//linking everything to submit button
 document.getElementById("submit").addEventListener("click", function(){
     imagePopUp();
-})
+});

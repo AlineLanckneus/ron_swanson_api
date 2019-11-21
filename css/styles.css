@@ -18,7 +18,7 @@ label{
     width: 80vw;
 }
 .btn{
-    margin: 1rem auto;
+    margin: 0.15rem auto;
 }
 .row.buttonRow{
     background-color: white;
@@ -27,7 +27,7 @@ label{
 .pyramid{
     width: 75vw;
     height: auto;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 .row{
     border: 1px solid black;
