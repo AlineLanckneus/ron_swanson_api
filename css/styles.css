@@ -10,6 +10,9 @@ header{
     margin: 0 auto;
     width: 80vw;
 }
+label{
+    font-size: 0.85rem;
+}
 .box2{
     margin: 0 auto;
     width: 80vw;

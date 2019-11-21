@@ -4,6 +4,7 @@ const quoteValue3 = document.querySelector(".quote3");
 const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
+const imageUrl = "/images/5cDe4MZ9E0ZfvcS10kmAUd2ynTkp6b3wfU-fYsxyNfg.png";
 
 
 async function quoteGenerator(){
@@ -71,3 +72,39 @@ async function quoteGenerator(){
 };//end of quotegenerator function
 
 quoteGenerator();
+
+let inputValue1 = document.getElementById("input1");
+let inputValue2 = document.getElementById("input2");
+let inputValue3 = document.getElementById("input3");
+let inputValue4 = document.getElementById("input4");
+let inputValue5 = document.getElementById("input5");
+
+
+function imagePopUp(){
+    let counter = 0;
+
+    if(inputValue1.value === 'Capitalism'){
+        counter++};
+    if (inputValue2.value === 'alcohols'){
+        counter++};
+    if (inputValue3.value === 'Creativity'){
+        counter++}; 
+    if (inputValue4.value === 'Fishing'){
+        counter++};
+    if (inputValue5.value === 'Turkey'){
+        counter++};
+    console.log(counter);
+    
+
+    if(counter > 2){
+        console.log("2/5")
+    } else {
+        console.log("loser!");
+    }
+
+    //document.querySelector(".pyramid").src = imageUrl;
+};
+
+document.getElementById("submit").addEventListener("click", function(){
+    imagePopUp();
+})
