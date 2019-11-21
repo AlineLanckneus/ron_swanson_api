@@ -4,7 +4,10 @@ const quoteValue3 = document.querySelector(".quote3");
 const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
-const imageUrl = "/images/5cDe4MZ9E0ZfvcS10kmAUd2ynTkp6b3wfU-fYsxyNfg.png";
+let imageSelector = document.querySelector(".pyramid");
+let src1 = "/images/ron-swanson-bottom-arrow.png";
+let src2 = "/images/ron-swanson-middle-arrow.png";
+let src3 = "/images/ron-swanson-top-arrow.png";
 
 
 async function quoteGenerator(){
@@ -83,23 +86,30 @@ let inputValue5 = document.getElementById("input5");
 function imagePopUp(){
     let counter = 0;
 
-    if(inputValue1.value === 'Capitalism'){
+    if(inputValue1.value === 'Capitalism' && inputValue1.value !== null){
         counter++};
-    if (inputValue2.value === 'alcohols'){
+    if (inputValue2.value === 'alcohols' && inputValue2.value !== null){
         counter++};
-    if (inputValue3.value === 'Creativity'){
+    if (inputValue3.value === 'Creativity' && inputValue3.value !== null){
         counter++}; 
-    if (inputValue4.value === 'Fishing'){
+    if (inputValue4.value === 'Fishing' && inputValue4.value !== null){
         counter++};
-    if (inputValue5.value === 'Turkey'){
+    if (inputValue5.value === 'Turkey' && inputValue5.value !== null){
         counter++};
     console.log(counter);
     
+    if(counter >= 4){
+        console.log("winner!")
+        imageSelector.src = src3;
+    };
+    if(counter === 3){ 
+        console.log("average!");
+        imageSelector.src = src2;
+    };
+    if(counter <= 2){
+        console.log('loser!');
+        imageSelector.src = src1;
 
-    if(counter > 2){
-        console.log("2/5")
-    } else {
-        console.log("loser!");
     }
 
     //document.querySelector(".pyramid").src = imageUrl;
