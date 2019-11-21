@@ -37,11 +37,7 @@ async function quoteGenerator(){
             //console.log(newArray[i]);
             //newArray[i]=string
             //console.log(newArray[0]);
-            quoteValue1.innerHTML = newArray[0];
-            quoteValue2.innerHTML = newArray[1];
-            quoteValue3.innerHTML = newArray[2];
-            quoteValue4.innerHTML = newArray[3];
-            quoteValue5.innerHTML = newArray[4];
+            
         }//end of for loop
         let firstQuote = newArray[0];
         let secondQuote = newArray[1];
@@ -55,7 +51,7 @@ async function quoteGenerator(){
         console.log(fourthQuote);
         console.log(fifthQuote);
 */
-        let one = firstQuote.replace('Capitalism','__________');
+        let one = firstQuote.replace('Capitalism','__________ ');
         let two = secondQuote.replace('alcohols', '________');
         let three = thirdQuote.replace('Creativity', '__________');
         let four = fourthQuote.replace('Fishing', '_______');
@@ -65,6 +61,12 @@ async function quoteGenerator(){
         console.log(three);
         console.log(four);
         console.log(five);
+
+        quoteValue1.innerHTML = one;
+        quoteValue2.innerHTML = two;
+        quoteValue3.innerHTML = three;
+        quoteValue4.innerHTML = four;
+        quoteValue5.innerHTML = five;
 
 };//end of quotegenerator function
 

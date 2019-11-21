@@ -1,9 +1,35 @@
 *{
     font-family: 'Alata';
+    font-size: 1.5rem;
 }
-
-
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+.box1{
+    margin: 0 auto;
+    width: 80vw;
+}
+.box2{
+    margin: 0 auto;
+    width: 80vw;
+}
+.btn{
+    margin: 1rem auto;
+}
+.row.buttonRow{
+    background-color: white;
+    border: none;
+}
 .pyramid{
-    width: 450px;
+    width: 75vw;
     height: auto;
+    margin: 1rem auto;
+}
+.row{
+    border: 1px solid black;
+    background-color: aquamarine;
+    width: 75vw;
+    margin: 2rem auto;
+    padding: 1rem;
 }
