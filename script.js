@@ -1,6 +1,8 @@
 const quoteValue1 = document.querySelector(".quote1");
 const quoteValue2 = document.querySelector(".quote2");
 const quoteValue3 = document.querySelector(".quote3");
+const quoteValue4 = document.querySelector(".quote4");
+const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
 
 
@@ -33,7 +35,12 @@ async function quoteGenerator(){
         newArray.sort();                                 
         for (let i = 0; i < newArray.length; i++) {
             console.log(newArray[i]);
-            
+            //newArray[i]=string
+            quoteValue1.innerHTML = newArray[0];
+            quoteValue2.innerHTML = newArray[1];
+            quoteValue3.innerHTML = newArray[2];
+            quoteValue4.innerHTML = newArray[3];
+            quoteValue5.innerHTML = newArray[4];
         }
         
 };
