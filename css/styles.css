@@ -108,6 +108,11 @@ label {
 
 #submit {
   margin-top: 1vw;
+  background-color: #e3b04b;
+  border: 5px solid #2b2b28;
+  border-radius: 20px;
+  color: #2b2b28;
+  font-weight: bold;
 }
 
 #message {
@@ -144,5 +149,6 @@ a:hover {
   background-color: #e3b04b;
   border: 5px solid #2b2b28;
   border-radius: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
