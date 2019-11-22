@@ -11,7 +11,7 @@ header {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 75%;
   padding: 0.5vw;
 }
@@ -126,5 +126,11 @@ a {
 a:hover {
   text-decoration: none;
   color: #f8f8f8;
+}
+
+#random {
+  margin-bottom: 5vw;
+  color: #2b2b28;
+  background-color: #e3b04b;
 }
 /*# sourceMappingURL=styles.css.map */
