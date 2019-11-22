@@ -1,5 +1,5 @@
 * {
-  font-family: 'Alata';
+  font-family: monospace;
   font-size: 1.5rem;
 }
 
@@ -10,13 +10,15 @@
 header {
   margin: 0 auto;
   text-align: center;
-  font-weight: 100;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .stencil {
   height: auto;
-  max-width: 200px;
+  max-width: 10vw;
   margin: 0.15rem auto;
+  min-width: 5vw;
 }
 
 .container-fluid {
@@ -26,17 +28,18 @@ header {
 
 .container-fluid__header {
   margin: 0 auto;
-  width: 80vw;
+  width: 70vw;
 }
 
 .container-fluid__footer {
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 .row {
-  width: 80vw;
-  margin: 1.5rem auto;
+  width: 70vw;
+  margin: 2vw auto;
 }
 
 .row__quote {
@@ -48,6 +51,7 @@ header {
 .row--btn, .row--btn2 {
   background-color: white;
   border: none;
+  width: 70vw;
 }
 
 .row__footer {
@@ -59,7 +63,16 @@ header {
 }
 
 .row__stencil {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  margin-left: 6vw;
 }
 
 p.quoteP {
@@ -78,6 +91,14 @@ label {
   margin: 0 auto;
 }
 
+#submit {
+  margin-top: 1vw;
+}
+
+#message {
+  text-align: center;
+}
+
 .pyramid {
   width: 80vw;
   height: auto;
@@ -86,8 +107,8 @@ label {
 }
 
 .pyramid:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }

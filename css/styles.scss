@@ -1,5 +1,5 @@
 *{
-    font-family: 'Alata';
+    font-family: monospace;
     font-size: 1.5rem;
     :focus{
         outline: 2px solid rgb(236, 240, 10);
@@ -8,39 +8,42 @@
 header{
     margin: 0 auto;
     text-align: center;
-    font-weight: 100;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .stencil{
     height: auto;
-    max-width: 200px;
+    max-width: 10vw;
     margin: 0.15rem auto;
+    min-width: 5vw;
 }
+
 .container-fluid{ 
     margin: 0 auto;
     width: 80vw;
     &__header{
         margin: 0 auto;
-        width: 80vw;
+        width: 70vw;
     }
     &__footer{
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
+        text-align: center;
     }
 }
 
 .row{
-    width: 80vw;
-    margin: 1.5rem auto;
-    
+    width: 70vw;
+    margin: 2vw auto;
     &__quote{
     border: 1px solid black;
     border-radius: 1%;
     background-color: rgb(199, 187, 26);
-    
     }
     &--btn, &--btn2{
         background-color: rgb(255, 255, 255);
         border: none;
+        width: 70vw;
     }
     &__footer{
         text-align: center;
@@ -49,7 +52,11 @@ header{
         }
     }
     &__stencil{
-        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 80vw;
+        margin-left: 6vw;
     }
 }
 p.quoteP{
@@ -66,14 +73,19 @@ label{
 .btn{
     margin: 0 auto;
 }
-
+#submit{
+    margin-top: 1vw;
+}
+#message{
+    text-align: center;
+}
 .pyramid{
     width: 80vw;
     height: auto;
     margin: 0 auto;
     padding: 1rem;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: all .3s ease-in-out;
         
     }
