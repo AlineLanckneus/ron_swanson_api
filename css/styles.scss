@@ -10,6 +10,8 @@ header{
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
+    max-width: 75%;
+    padding: 0.5vw;
 }
 .stencil{
     height: auto;
@@ -23,12 +25,16 @@ header{
     width: 80vw;
     &__header{
         margin: 0 auto;
-        width: 70vw;
+        width: 100vw;
+        background-color: #2b2b28;
+        color: #f8f8f8;
     }
     &__footer{
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
+        background-color: #2b2b28;
+        color: #f1d6ab;
         text-align: center;
+        width: 100vw;
+        margin: 0 auto;
     }
 }
 
@@ -38,7 +44,7 @@ header{
     &__quote{
     border: 1px solid black;
     border-radius: 1%;
-    background-color: rgb(199, 187, 26);
+    background-color: #e3b04b;
     }
     &--btn, &--btn2{
         background-color: rgb(255, 255, 255);
@@ -92,9 +98,9 @@ label{
 }
 
 a{
-    color: rgb(255, 255, 255);
+    color: #f1d6ab;
     &:hover{
         text-decoration: none;
-        color: rgb(27, 221, 235);
+        color: #f8f8f8;
     }
 }

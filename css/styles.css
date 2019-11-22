@@ -12,6 +12,8 @@ header {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
+  max-width: 75%;
+  padding: 0.5vw;
 }
 
 .stencil {
@@ -28,13 +30,17 @@ header {
 
 .container-fluid__header {
   margin: 0 auto;
-  width: 70vw;
+  width: 100vw;
+  background-color: #2b2b28;
+  color: #f8f8f8;
 }
 
 .container-fluid__footer {
-  background-color: black;
-  color: white;
+  background-color: #2b2b28;
+  color: #f1d6ab;
   text-align: center;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .row {
@@ -45,7 +51,7 @@ header {
 .row__quote {
   border: 1px solid black;
   border-radius: 1%;
-  background-color: #c7bb1a;
+  background-color: #e3b04b;
 }
 
 .row--btn, .row--btn2 {
@@ -114,11 +120,11 @@ label {
 }
 
 a {
-  color: white;
+  color: #f1d6ab;
 }
 
 a:hover {
   text-decoration: none;
-  color: #1bddeb;
+  color: #f8f8f8;
 }
 /*# sourceMappingURL=styles.css.map */
