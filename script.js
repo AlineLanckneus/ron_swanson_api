@@ -6,7 +6,6 @@ const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
 
-let messageSelector = document.querySelector("#message");
 let src1 = "/images/ron-swanson-bottom-arrow.png";
 let src2 = "/images/ron-swanson-middle-arrow.png";
 let src3 = "/images/ron-swanson-top-arrow.png";
@@ -88,14 +87,25 @@ let inputValue5 = document.getElementById("input5");
 
 //checks if answers are correct and adds to score
 //different image will pop up with each score
-function imagePopUp(){
+const highScore = "Well done! You correctly guessed most of the answers! You've earned your place at the top of the Pyramid of Greatness!";
+const avgScore = "Not bad! You correctly guessed three out of five. Your place in the Pyramid of Greatness is subsequently somewhere in the middle. Hit the try again button to do better!";
+const lowScore = "Auwtsch, you've barely earned your place in the Pyramid of Greatness.. Keep dangling at the bottom or be a true Swanson and hit the try again button to do better!";
 
+function imagePopUp(){
+    //selecting div with id=message, creating div inside and giving it class of 'row'
+    const messageEl = document.querySelector("#message");
+    messageEl.className = 'container-fluid';
+    let msg = document.createElement("div");
+    msg.className = 'row';
+    messageEl.appendChild(msg);
+
+    //creating img element and placing it inside imagePop div
     const popUpContainer = document.querySelector("#imagePop");
     popUpContainer.className = 'container-fluid';
     const img = document.createElement("img");
     img.className = 'pyramid';
     popUpContainer.appendChild(img);
-
+    //selecting div inside imagePop and creating try again-btn inside it
     const rowBtn2 = document.querySelector(".row--btn2");
     let tryButton = document.createElement("button");
     tryButton.className = "btn btn-large btn-success";
@@ -120,17 +130,19 @@ function imagePopUp(){
     //displaying different image for each score
     if(counter >= 4){
         console.log("winner!")
+        msg.innerHTML = highScore;
         img.src = src3;
     };
     if(counter === 3){ 
         console.log("average!");
+        msg.innerHTML = avgScore;
         img.src = src2;
     };
     if(counter <= 2){
         console.log('loser!');
+        msg.innerHTML = lowScore;
         img.src = src1;
-
-    }
+    };
     
 
 };//end imagePopUp function
