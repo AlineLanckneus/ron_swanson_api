@@ -1,38 +1,62 @@
-*{
-    font-family: 'Alata';
-    font-size: 1.5rem;
+* {
+  font-family: 'Alata';
+  font-size: 1.5rem;
 }
-header{
-    margin: 0 auto;
-    text-align: center;
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
 }
-.box1{
-    margin: 0 auto;
-    width: 80vw;
+
+.container-fluid {
+  margin: 0 auto;
+  width: 80vw;
 }
-label{
-    font-size: 0.85rem;
+
+.container-fluid__header {
+  margin: 1rem auto;
+  width: 80vw;
 }
-.box2{
-    margin: 0 auto;
-    width: 80vw;
+
+input {
+  max-width: 50vw;
 }
-.btn{
-    margin: 0.15rem auto;
+
+label {
+  font-size: 0.85rem;
 }
-.row.buttonRow{
-    background-color: white;
-    border: none;
+
+.btn {
+  margin: 0 auto;
 }
-.pyramid{
-    width: 75vw;
-    height: auto;
-    margin: 0.5rem auto;
+
+.pyramid {
+  width: 75vw;
+  height: auto;
+  margin: 1.5rem auto;
 }
-.row{
-    border: 1px solid black;
-    background-color: aquamarine;
-    width: 75vw;
-    margin: 2rem auto;
-    padding: 1rem;
+
+.pyramid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
+
+.row {
+  width: 75vw;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.row__quote {
+  border: 1px solid black;
+  background-color: #c7bb1a;
+}
+
+.row--btn {
+  background-color: white;
+  border: none;
+}
+/*# sourceMappingURL=styles.css.map */

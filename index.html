@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--My CSS-->
     <link rel="stylesheet" href="/css/styles.css">
+    <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
 
     <title>Ron Swanson Pyramid of Greatness Calculator</title>
 </head>
 <body>
-    <div class="container-fluid "> 
+    <div class="container-fluid__header "> 
         <header>
             Fill in the blanks and find out where you belong in the Ron Swanson Pyramid of Greatness!
         </header>
     </div>
 
-    <div class="container-fluid box1"> 
-        <div class="row"> 
+    <div class="container-fluid"> 
+        <div class="row row__quote"> 
             <div class="col-12">
                 <p class="quote1"></p>
                 <div class="form-group">
@@ -29,7 +32,7 @@
             
         </div>
         
-        <div class="row">
+        <div class="row row__quote">
             <div class="col-12">
                 <p class="quote2"></p>
                 <div class="form-group">
@@ -38,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="row"> 
+        <div class="row row__quote"> 
             <div class="col-12">
                 <p class="quote3"></p>
                 <div class="form-group">
@@ -47,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="row"> 
+        <div class="row row__quote"> 
             <div class="col-12">
                 <p class="quote4"></p>
                 <div class="form-group">
@@ -56,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="row"> 
+        <div class="row row__quote"> 
             <div class="col-12">
                 <p class="quote5"></p>
                 <div class="form-group">
@@ -65,17 +68,19 @@
                 </div>
             </div>
         </div>
-        <div class="row buttonRow"> 
+        <div class="row row--btn"> 
             <button id="submit" type="button" class="btn btn-large btn-dark">SUBMIT</button>
         </div>
     </div>
 
-    <div class="container-fluid box2">
+    <div class="container-fluid">
         <div id="message"></div>
         <img class="pyramid" alt="">
     </div>
 
+    <!--My javascript-->
     <script type="text/javascript" src="script.js"></script>
+    <!--Bootstrap javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

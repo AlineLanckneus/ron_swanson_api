@@ -1,0 +1,54 @@
+*{
+    font-family: 'Alata';
+    font-size: 1.5rem;
+}
+header{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+}
+.container-fluid{ 
+    margin: 0 auto;
+    width: 80vw;
+    &__header{
+        margin: 1rem auto;
+        width: 80vw;
+    }
+    
+}
+input{
+    max-width: 50vw;
+}
+
+label{
+    font-size: 0.85rem;
+}
+
+.btn{
+    margin: 0 auto;
+}
+
+.pyramid{
+    width: 75vw;
+    height: auto;
+    margin: 1.5rem auto;
+    &:hover{
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
+        
+    }
+}
+.row{
+    width: 75vw;
+    margin: 2rem auto;
+    padding: 1rem;
+    &__quote{
+    border: 1px solid black;
+    background-color: rgb(199, 187, 26);
+    }
+    &--btn{
+        background-color: rgb(255, 255, 255);
+        border: none;
+    
+    }
+}
