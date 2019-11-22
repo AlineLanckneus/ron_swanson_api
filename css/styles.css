@@ -69,4 +69,8 @@ label {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+
+a {
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
