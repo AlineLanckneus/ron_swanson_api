@@ -5,7 +5,7 @@ const quoteValue3 = document.querySelector(".quote3");
 const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
-let imageSelector = document.querySelector(".pyramid");
+
 let messageSelector = document.querySelector("#message");
 let src1 = "/images/ron-swanson-bottom-arrow.png";
 let src2 = "/images/ron-swanson-middle-arrow.png";
@@ -87,7 +87,23 @@ let inputValue4 = document.getElementById("input4");
 let inputValue5 = document.getElementById("input5");
 
 //checks if answers are correct and adds to score
+//different image will pop up with each score
 function imagePopUp(){
+
+    const popUpContainer = document.querySelector("#imagePop");
+    popUpContainer.className = 'container-fluid';
+    const img = document.createElement("img");
+    img.className = 'pyramid';
+    popUpContainer.appendChild(img);
+
+    const rowBtn2 = document.querySelector(".row--btn2");
+    let tryButton = document.createElement("button");
+    tryButton.className = "btn btn-large btn-success";
+    tryButton.innerHTML = "TRY AGAIN";
+    popUpContainer.append(rowBtn2);
+    rowBtn2.appendChild(tryButton);
+
+    //checking answers
     let counter = 0;
 
     if(inputValue1.value === 'Capitalism' && inputValue1.value !== null){
@@ -104,17 +120,18 @@ function imagePopUp(){
     //displaying different image for each score
     if(counter >= 4){
         console.log("winner!")
-        imageSelector.src = src3;
+        img.src = src3;
     };
     if(counter === 3){ 
         console.log("average!");
-        imageSelector.src = src2;
+        img.src = src2;
     };
     if(counter <= 2){
         console.log('loser!');
-        imageSelector.src = src1;
+        img.src = src1;
 
     }
+    
 
 };//end imagePopUp function
 
@@ -122,3 +139,6 @@ function imagePopUp(){
 document.getElementById("submit").addEventListener("click", function(){
     imagePopUp();
 });
+
+
+

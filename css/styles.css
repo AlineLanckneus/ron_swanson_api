@@ -3,6 +3,10 @@
   font-size: 1.5rem;
 }
 
+* :focus {
+  outline: 2px solid #ecf00a;
+}
+
 header {
   margin: 0 auto;
   text-align: center;
@@ -27,15 +31,15 @@ header {
 .row {
   width: 80vw;
   margin: 2rem auto;
-  padding: 1rem;
 }
 
 .row__quote {
   border: 1px solid black;
+  border-radius: 1%;
   background-color: #c7bb1a;
 }
 
-.row--btn {
+.row--btn, .row--btn2 {
   background-color: white;
   border: none;
 }
@@ -72,5 +76,10 @@ label {
 
 a {
   color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1bddeb;
 }
 /*# sourceMappingURL=styles.css.map */

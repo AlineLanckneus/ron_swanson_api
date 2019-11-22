@@ -1,6 +1,9 @@
 *{
     font-family: 'Alata';
     font-size: 1.5rem;
+    :focus{
+        outline: 2px solid rgb(236, 240, 10);
+    }
 }
 header{
     margin: 0 auto;
@@ -23,12 +26,13 @@ header{
 .row{
     width: 80vw;
     margin: 2rem auto;
-    padding: 1rem;
+    
     &__quote{
     border: 1px solid black;
+    border-radius: 1%;
     background-color: rgb(199, 187, 26);
     }
-    &--btn{
+    &--btn, &--btn2{
         background-color: rgb(255, 255, 255);
         border: none;
     }
@@ -63,4 +67,8 @@ label{
 
 a{
     color: rgb(255, 255, 255);
+    &:hover{
+        text-decoration: none;
+        color: rgb(27, 221, 235);
+    }
 }
