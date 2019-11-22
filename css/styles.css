@@ -32,9 +32,10 @@ label {
 }
 
 .pyramid {
-  width: 75vw;
+  width: 80vw;
   height: auto;
-  margin: 1.5rem auto;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .pyramid:hover {
@@ -45,7 +46,7 @@ label {
 }
 
 .row {
-  width: 75vw;
+  width: 80vw;
   margin: 2rem auto;
   padding: 1rem;
 }
