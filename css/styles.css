@@ -13,13 +13,19 @@ header {
   font-weight: 100;
 }
 
+.stencil {
+  height: auto;
+  max-width: 200px;
+  margin: 0.15rem auto;
+}
+
 .container-fluid {
   margin: 0 auto;
   width: 80vw;
 }
 
 .container-fluid__header {
-  margin: 1rem auto;
+  margin: 0 auto;
   width: 80vw;
 }
 
@@ -30,7 +36,7 @@ header {
 
 .row {
   width: 80vw;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
 }
 
 .row__quote {
@@ -46,6 +52,18 @@ header {
 
 .row__footer {
   text-align: center;
+}
+
+.row__footer footer {
+  padding: 0.5rem;
+}
+
+.row__stencil {
+  margin: 0 auto;
+}
+
+p.quoteP {
+  padding-top: 0.5rem;
 }
 
 input {

@@ -10,6 +10,9 @@ let src1 = "/images/ron-swanson-bottom-arrow.png";
 let src2 = "/images/ron-swanson-middle-arrow.png";
 let src3 = "/images/ron-swanson-top-arrow.png";
 
+function refreshPage(){
+    window.location.reload();
+};
 
 async function quoteGenerator(){
     const response = await fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes/200");
@@ -91,6 +94,8 @@ const highScore = "Well done! You correctly guessed most of the answers! You've 
 const avgScore = "Not bad! You correctly guessed three out of five. Your place in the Pyramid of Greatness is subsequently somewhere in the middle. Hit the try again button to do better!";
 const lowScore = "Auwtsch, you've barely earned your place in the Pyramid of Greatness.. Keep dangling at the bottom or be a true Swanson and hit the try again button to do better!";
 
+
+
 function imagePopUp(){
     //selecting div with id=message, creating div inside and giving it class of 'row'
     const messageEl = document.querySelector("#message");
@@ -109,6 +114,7 @@ function imagePopUp(){
     const rowBtn2 = document.querySelector(".row--btn2");
     let tryButton = document.createElement("button");
     tryButton.className = "btn btn-large btn-success";
+    tryButton.setAttribute("id", "tryAgainBtn");
     tryButton.innerHTML = "TRY AGAIN";
     popUpContainer.append(rowBtn2);
     rowBtn2.appendChild(tryButton);
@@ -127,6 +133,7 @@ function imagePopUp(){
     if (inputValue5.value === 'Turkey' && inputValue5.value !== null){
         counter++};
     console.log(counter);
+    
     //displaying different image for each score
     if(counter >= 4){
         console.log("winner!")
@@ -144,6 +151,10 @@ function imagePopUp(){
         img.src = src1;
     };
     
+    //clicking try again button reloads the webpage
+    tryButton.addEventListener("click", function(){
+        refreshPage();
+    });
 
 };//end imagePopUp function
 

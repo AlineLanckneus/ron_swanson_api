@@ -10,11 +10,16 @@ header{
     text-align: center;
     font-weight: 100;
 }
+.stencil{
+    height: auto;
+    max-width: 200px;
+    margin: 0.15rem auto;
+}
 .container-fluid{ 
     margin: 0 auto;
     width: 80vw;
     &__header{
-        margin: 1rem auto;
+        margin: 0 auto;
         width: 80vw;
     }
     &__footer{
@@ -25,12 +30,13 @@ header{
 
 .row{
     width: 80vw;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     
     &__quote{
     border: 1px solid black;
     border-radius: 1%;
     background-color: rgb(199, 187, 26);
+    
     }
     &--btn, &--btn2{
         background-color: rgb(255, 255, 255);
@@ -38,9 +44,17 @@ header{
     }
     &__footer{
         text-align: center;
+        footer{
+            padding: 0.5rem;
+        }
+    }
+    &__stencil{
+        margin: 0 auto;
     }
 }
-
+p.quoteP{
+    padding-top: 0.5rem;
+}
 input{
     max-width: 50vw;
 }
