@@ -91,11 +91,16 @@ header {
 }
 
 p.quoteP {
-  padding-top: 0.5rem;
+  padding: 1rem;
 }
 
 input {
   max-width: 50vw;
+  padding: 1rem;
+}
+
+.form-group {
+  padding: 1rem;
 }
 
 label {
