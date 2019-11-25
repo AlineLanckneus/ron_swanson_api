@@ -6,6 +6,7 @@ const quoteValue4 = document.querySelector(".quote4");
 const quoteValue5 = document.querySelector(".quote5");
 let newArray = [];
 const r = document.querySelector("#random");
+//const rEl = document.querySelector("#random2");
 
 let src1 = "/images/ron-swanson-bottom-arrow.png";
 let src2 = "/images/ron-swanson-middle-arrow.png";
@@ -106,6 +107,9 @@ function imagePopUp(){
     popUpContainer.append(rowBtn2);
     rowBtn2.appendChild(tryButton);
 
+        
+    
+
     //checking answers
     let counter = 0;
 
@@ -149,32 +153,21 @@ function imagePopUp(){
 document.getElementById("submit").addEventListener("click", function(){
     imagePopUp();
 });
-/*
-let randomQuoteEl = document.querySelector(".randomQuote");
-
-async function randomQuoteGenerator(){
-    const response = await fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes/200");
-    const data = await response.json();
-    return data[0];
-    function r(){
-        randomQuoteEl.innerHTML = data[0];
-    };
-};
-
-document.querySelector("#random").addEventListener("click", function(){
-    randomQuoteGenerator();
-});*/
 
 async function rquoteGenerator(){
     const response = await fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes/200");
     const data = await response.json();
 
-    
+        
+        let rEl = document.querySelector("#random2");
+        
+
         for (let i = 0; i < data.length; i++) {
-        r.innerHTML = '"' + data[i] + '"';};
+        rEl.innerHTML = '"' + data[i] + '"';};
     };
     
 
     r.addEventListener("click", function(){
         rquoteGenerator();
     });
+    

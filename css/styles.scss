@@ -12,6 +12,7 @@ header{
     font-size: 1.5rem;
     max-width: 75%;
     padding: 0.5vw;
+    letter-spacing: 2px;
     
 }
 .stencil{
@@ -138,12 +139,17 @@ a{
     border: 5px solid #2b2b28;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 //css below worked to change focus state
     &:focus{
         background-color: #2b2b28;
         color: #f8f8f8;
         cursor: pointer;
         text-decoration: underline;
+    }
+    &:active{
+        text-decoration: none;
     }
 }
 #tryAgainBtn{
@@ -158,4 +164,9 @@ a{
         cursor: pointer;
         text-decoration: underline;
     }
+}
+#random2{
+    font-style: oblique;
+    margin: 0 auto;
+    text-decoration: none;
 }
