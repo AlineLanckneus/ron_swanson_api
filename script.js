@@ -107,21 +107,19 @@ function imagePopUp(){
     popUpContainer.append(rowBtn2);
     rowBtn2.appendChild(tryButton);
 
-        
-    
 
     //checking answers
     let counter = 0;
 
-    if(inputValue1.value === 'Capitalism' && inputValue1.value !== null){
+    if(inputValue1.value === 'Capitalism' || inputValue1.value === 'capitalism' && inputValue1.value !== null){
         counter++};
     if (inputValue2.value === 'alcohols' && inputValue2.value !== null){
         counter++};
-    if (inputValue3.value === 'Creativity' && inputValue3.value !== null){
+    if (inputValue3.value === 'Creativity' || inputValue3.value === 'creativity'&& inputValue3.value !== null){
         counter++}; 
-    if (inputValue4.value === 'Fishing' && inputValue4.value !== null){
+    if (inputValue4.value === 'Fishing' || inputValue4.value === 'fishing'&& inputValue4.value !== null){
         counter++};
-    if (inputValue5.value === 'Turkey' && inputValue5.value !== null){
+    if (inputValue5.value === 'Turkey' || inputValue5.value === 'turkey'&& inputValue5.value !== null){
         counter++};
     console.log(counter);
 
@@ -152,21 +150,18 @@ function imagePopUp(){
 //linking everything to submit button
 document.getElementById("submit").addEventListener("click", function(){
     imagePopUp();
-});
+}, {once : true});//modern js way to avoid firing again after first click
+
 
 async function rquoteGenerator(){
     const response = await fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes/200");
     const data = await response.json();
 
-        
         let rEl = document.querySelector("#random2");
-        
-
         for (let i = 0; i < data.length; i++) {
         rEl.innerHTML = '"' + data[i] + '"';};
     };
     
-
     r.addEventListener("click", function(){
         rquoteGenerator();
     });
