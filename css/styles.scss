@@ -1,10 +1,6 @@
 *{
     font-family: monospace;
     font-size: 1.5rem;
-    
-    :focus{
-        outline: 2px solid rgb(236, 240, 10);
-    }
 }
 body{
     background-color: #2b2b28;
@@ -85,12 +81,13 @@ input{
     padding: 1rem;
 }
 label{
-    font-size: 0.85rem;
+    font-size: 1.35rem;
 }
 
 .btn{
     margin: 0 auto;
 }
+
 #submit{
     margin-top: 1vw;
     background-color: #e3b04b;
@@ -98,6 +95,12 @@ label{
     border-radius: 20px;
     color: #2b2b28;
     font-weight: bold;
+    &:focus{
+        background-color: #2b2b28;
+        color: #f8f8f8;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 #message{
     text-align: center;
@@ -118,10 +121,15 @@ label{
 a{
     color: #2b2b28;
     &:hover{
-        text-decoration: none;
+        text-decoration: underline;
         color: #2b2b28;
     }
+    &:focus{
+        text-decoration: underline;
+        outline: none;
+    }
 }
+
 #random{
     margin-bottom: 2vw;
     color: #2b2b28;
@@ -129,4 +137,10 @@ a{
     border: 5px solid #2b2b28;
     border-radius: 20px;
     font-weight: bold;
+    &:focus{
+        background-color: #2b2b28;
+        color: #f8f8f8;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }

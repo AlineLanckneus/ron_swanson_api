@@ -3,10 +3,6 @@
   font-size: 1.5rem;
 }
 
-* :focus {
-  outline: 2px solid #ecf00a;
-}
-
 body {
   background-color: #2b2b28;
 }
@@ -104,7 +100,7 @@ input {
 }
 
 label {
-  font-size: 0.85rem;
+  font-size: 1.35rem;
 }
 
 .btn {
@@ -118,6 +114,13 @@ label {
   border-radius: 20px;
   color: #2b2b28;
   font-weight: bold;
+}
+
+#submit:focus {
+  background-color: #2b2b28;
+  color: #f8f8f8;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 #message {
@@ -144,8 +147,13 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #2b2b28;
+}
+
+a:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
 #random {
@@ -155,5 +163,12 @@ a:hover {
   border: 5px solid #2b2b28;
   border-radius: 20px;
   font-weight: bold;
+}
+
+#random:focus {
+  background-color: #2b2b28;
+  color: #f8f8f8;
+  cursor: pointer;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
