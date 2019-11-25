@@ -171,7 +171,7 @@ async function rquoteGenerator(){
 
     
         for (let i = 0; i < data.length; i++) {
-        r.innerHTML = data[i];};
+        r.innerHTML = '"' + data[i] + '"';};
     };
     
 
