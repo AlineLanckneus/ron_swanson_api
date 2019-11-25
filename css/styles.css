@@ -171,4 +171,19 @@ a:focus {
   cursor: pointer;
   text-decoration: underline;
 }
+
+#tryAgainBtn {
+  background-color: #e3b04b;
+  border: 5px solid #f8f8f8;
+  border-radius: 20px;
+  color: #2b2b28;
+  font-weight: bold;
+}
+
+#tryAgainBtn:focus {
+  background-color: #2b2b28;
+  color: #f8f8f8;
+  cursor: pointer;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=styles.css.map */

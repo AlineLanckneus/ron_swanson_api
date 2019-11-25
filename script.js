@@ -100,7 +100,7 @@ function imagePopUp(){
     //selecting div inside imagePop and creating try again-btn inside it
     const rowBtn2 = document.querySelector(".row--btn2");
     let tryButton = document.createElement("button");
-    tryButton.className = "btn btn-large btn-success";
+    tryButton.className = "btn btn-large";
     tryButton.setAttribute("id", "tryAgainBtn");
     tryButton.innerHTML = "TRY AGAIN";
     popUpContainer.append(rowBtn2);
