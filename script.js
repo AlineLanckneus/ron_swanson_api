@@ -73,14 +73,14 @@ let inputValue3 = document.getElementById("input3");
 let inputValue4 = document.getElementById("input4");
 let inputValue5 = document.getElementById("input5");
 
+
 //checks if answers are correct and adds to score
 //different image will pop up with each score
 const highScore = "Well done! You correctly guessed most of the answers! You've earned your place at the top of the Pyramid of Greatness!";
 const avgScore = "Not bad! You guessed three out of five. Your place in the Pyramid of Greatness is subsequently somewhere in the middle. Hit the try again button to do better!";
 const lowScore = "Auwtsch, you've barely earned your place in the Pyramid of Greatness.. Keep dangling at the bottom or be a true Swanson and hit the try again button to do better!";
 
-
-
+//function that will run after pressing submit button
 function imagePopUp(){
     //selecting div with id=message, creating div inside and giving it class of 'row'
     const messageEl = document.querySelector("#message");
@@ -104,20 +104,43 @@ function imagePopUp(){
     popUpContainer.append(rowBtn2);
     rowBtn2.appendChild(tryButton);
 
-
     //checking answers
     let counter = 0;
 
     if(inputValue1.value === 'Capitalism' || inputValue1.value === 'capitalism' && inputValue1.value !== null){
-        counter++};
+        counter++; 
+        inputValue1.style.color = 'green';
+    } else {
+        inputValue1.style.color = 'red';
+    };
+
     if (inputValue2.value === 'alcohols' && inputValue2.value !== null){
-        counter++};
+        counter++;
+        inputValue2.style.color = 'green';
+    } else{
+        inputValue2.style.color = 'red';
+    };
+
     if (inputValue3.value === 'Creativity' || inputValue3.value === 'creativity'&& inputValue3.value !== null){
-        counter++}; 
+        counter++;
+        inputValue3.style.color = 'green';
+    } else {
+        inputValue3.style.color = 'red';
+    }; 
+
     if (inputValue4.value === 'Fishing' || inputValue4.value === 'fishing'&& inputValue4.value !== null){
-        counter++};
+        counter++;
+        inputValue4.style.color = 'green';
+    } else{
+        inputValue4.style.color = 'red';
+    };
+
     if (inputValue5.value === 'Turkey' || inputValue5.value === 'turkey'&& inputValue5.value !== null){
-        counter++};
+        counter++;
+        inputValue5.style.color = 'green';
+    } else{
+        inputValue5.style.color = 'red';
+    };
     console.log(counter);
 
     //displaying different image for each score
@@ -141,6 +164,15 @@ function imagePopUp(){
     tryButton.addEventListener("click", function(){
         refreshPage();
     });
+const questions = document.querySelectorAll(".form-control");
+const answers = ['capitalism', 'alcohols', 'creativity', 'fishing', 'turkey'];
+
+for (let i = 0; i < questions.length; i++) {
+    if(questions[i] === answers[i]){
+        questions.value.style.color = 'green';
+    }
+    
+}
 
 };//end imagePopUp function
 
