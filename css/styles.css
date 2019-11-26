@@ -1,5 +1,4 @@
 * {
-  font-family: monospace;
   font-size: 1.5rem;
 }
 
@@ -8,6 +7,7 @@ body {
 }
 
 header {
+  font-family: 'Roboto mono';
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
@@ -56,6 +56,7 @@ header {
 }
 
 .row__quote {
+  font-family: Montserrat;
   border: 5px solid #f8f8f8;
   background-color: #e3b04b;
 }
@@ -71,6 +72,7 @@ header {
 }
 
 .row__footer footer {
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
@@ -91,24 +93,41 @@ p.quoteP {
   padding: 1rem;
 }
 
-input {
-  max-width: 50vw;
-  padding: 1rem;
+label {
+  font-size: 1.35rem;
 }
 
 .form-group {
   padding: 1rem;
 }
 
-label {
-  font-size: 1.35rem;
+input {
+  max-width: 50vw;
+  padding: 1rem;
+}
+
+a {
+  color: #2b2b28;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2b2b28;
+}
+
+a:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
 .btn {
   margin: 0 auto;
+  font-family: 'Roboto mono';
 }
 
 #submit {
+  letter-spacing: 1px;
   margin-top: 1vw;
   background-color: #e3b04b;
   border: 5px solid #f8f8f8;
@@ -122,39 +141,6 @@ label {
   color: #f8f8f8;
   cursor: pointer;
   text-decoration: underline;
-}
-
-#message {
-  text-align: center;
-  color: #f8f8f8;
-}
-
-.pyramid {
-  width: 80vw;
-  height: auto;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.pyramid:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-a {
-  color: #2b2b28;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #2b2b28;
-}
-
-a:focus {
-  text-decoration: underline;
-  outline: none;
 }
 
 #random {
@@ -194,9 +180,28 @@ a:focus {
   text-decoration: underline;
 }
 
+#message {
+  text-align: center;
+  color: #f8f8f8;
+}
+
 #random2 {
-  font-style: oblique;
+  font-family: 'Roboto mono';
   margin: 0 auto;
   text-decoration: none;
+}
+
+.pyramid {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.pyramid:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

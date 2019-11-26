@@ -1,11 +1,11 @@
 *{
-    font-family: monospace;
     font-size: 1.5rem;
 }
 body{
     background-color: #2b2b28;
 }
 header{
+    font-family: 'Roboto mono';
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
@@ -49,6 +49,7 @@ header{
     margin: 2vw auto;
     border-radius: 30px;
     &__quote{
+        font-family: Montserrat;
     border: 5px solid #f8f8f8;
     background-color: #e3b04b;
     }
@@ -59,7 +60,9 @@ header{
     }
     &__footer{
         text-align: center;
+        
         footer{
+            font-size: 1.2rem;
             padding: 0.5rem;
         }
     }
@@ -74,22 +77,37 @@ header{
 p.quoteP{
     padding: 1rem;
 }
-input{
-    max-width: 50vw;
-    padding: 1rem;
+    //FORM
+label{
+    font-size: 1.35rem;
 }
 .form-group{
     padding: 1rem;
 }
-label{
-    font-size: 1.35rem;
+input{
+    max-width: 50vw;
+    padding: 1rem;
 }
-
+    //LINKS
+a{
+    color: #2b2b28;
+    font-size: 1.2rem;
+    &:hover{
+        text-decoration: underline;
+        color: #2b2b28;
+    }
+    &:focus{
+        text-decoration: underline;
+        outline: none;
+    }
+}
+    //BUTTONS
 .btn{
     margin: 0 auto;
+    font-family: 'Roboto mono';
 }
-
 #submit{
+    letter-spacing: 1px;
     margin-top: 1vw;
     background-color: #e3b04b;
     border: 5px solid #f8f8f8;
@@ -104,34 +122,6 @@ label{
         text-decoration: underline;
     }
 }
-#message{
-    text-align: center;
-    color: #f8f8f8;
-}
-.pyramid{
-    width: 80vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 1rem;
-    &:hover{
-        transform: scale(1.05);
-        transition: all .3s ease-in-out;
-        
-    }
-}
-
-a{
-    color: #2b2b28;
-    &:hover{
-        text-decoration: underline;
-        color: #2b2b28;
-    }
-    &:focus{
-        text-decoration: underline;
-        outline: none;
-    }
-}
-
 #random{
     margin-bottom: 2vw;
     color: #2b2b28;
@@ -165,8 +155,26 @@ a{
         text-decoration: underline;
     }
 }
+    //POP UP TEXT
+
+#message{
+    text-align: center;
+    color: #f8f8f8;
+}
 #random2{
-    font-style: oblique;
+    font-family: 'Roboto mono';
     margin: 0 auto;
     text-decoration: none;
+}
+    //IMAGES
+.pyramid{
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    &:hover{
+        transform: scale(1.05);
+        transition: all .3s ease-in-out;
+        
+    }
 }

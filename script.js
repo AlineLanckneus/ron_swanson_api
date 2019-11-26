@@ -20,8 +20,6 @@ async function quoteGenerator(){
     const response = await fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes/200");
     const data = await response.json();
 
-    
-
         //iterates over all of the quotes looking for 5 specific quotes and adding these to an empty array
         data.forEach(function(quote) {
             if (quote === "Clear alcohols are for rich women on diets."){
@@ -44,7 +42,6 @@ async function quoteGenerator(){
         //sorts the array of quotes in a fixed and alphabetical way
         newArray.sort();                                 
         for (let i = 0; i < newArray.length; i++) {
-
         }//end of for loop
         //assigning quotes to variables
         let firstQuote = newArray[0];
