@@ -8,9 +8,9 @@ let newArray = [];
 const r = document.querySelector("#random");
 //const rEl = document.querySelector("#random2");
 
-let src1 = "/images/ron-swanson-bottom-arrow.png";
-let src2 = "/images/ron-swanson-middle-arrow.png";
-let src3 = "/images/ron-swanson-top-arrow.png";
+const src1 = "/images/ron-swanson-bottom-arrow.png";
+const src2 = "/images/ron-swanson-middle-arrow.png";
+const src3 = "/images/ron-swanson-top-arrow.png";
 
 function refreshPage(){
     window.location.reload();
@@ -176,15 +176,6 @@ function imagePopUp(){
     tryButton.addEventListener("click", function(){
         refreshPage();
     });
-const questions = document.querySelectorAll(".form-control");
-const answers = ['capitalism', 'alcohols', 'creativity', 'fishing', 'turkey'];
-
-for (let i = 0; i < questions.length; i++) {
-    if(questions[i] === answers[i]){
-        questions.value.style.color = 'green';
-    }
-    
-}
 
 };//end imagePopUp function
 

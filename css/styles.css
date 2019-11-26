@@ -220,4 +220,10 @@ a:focus {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+
+.copyright {
+  font-family: 'Roboto mono';
+  color: #e3b04b;
+  background-color: #2b2b28;
+}
 /*# sourceMappingURL=styles.css.map */
