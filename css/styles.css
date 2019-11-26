@@ -17,18 +17,6 @@ header {
   letter-spacing: 2px;
 }
 
-.stencil {
-  height: auto;
-  max-width: 10vw;
-  margin: 0.15rem auto;
-  min-width: 5vw;
-}
-
-.container-fluid.container-stencil {
-  background-color: #fff;
-  width: 100vw;
-}
-
 .container-fluid {
   margin: 0 auto;
   width: 80vw;
@@ -108,35 +96,6 @@ input {
   padding: 1rem;
 }
 
-.green {
-  font-weight: bolder;
-  color: green;
-}
-
-.red {
-  font-weight: bolder;
-  color: red;
-}
-
-.credits {
-  font-weight: bolder;
-}
-
-a {
-  color: #2b2b28;
-  font-size: 1.2rem;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #2b2b28;
-}
-
-a:focus {
-  text-decoration: underline;
-  outline: none;
-}
-
 .btn {
   margin: 0 auto;
   font-family: 'Roboto mono';
@@ -160,7 +119,7 @@ a:focus {
 }
 
 #random {
-  margin-bottom: 2vw;
+  margin-bottom: 1rem;
   color: #2b2b28;
   background-color: #e3b04b;
   border: 5px solid #2b2b28;
@@ -203,8 +162,18 @@ a:focus {
 
 #random2 {
   font-family: 'Roboto mono';
-  margin: 0 auto;
+  margin-bottom: 0.5rem;
   text-decoration: none;
+}
+
+.green {
+  font-weight: bolder;
+  color: green;
+}
+
+.red {
+  font-weight: bolder;
+  color: red;
 }
 
 .pyramid {
@@ -224,7 +193,28 @@ a:focus {
 .copyright {
   font-size: 1.2rem;
   font-family: 'Roboto mono';
+  padding: 0.5rem;
   color: #e3b04b;
   background-color: #2b2b28;
+}
+
+.credits {
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #2b2b28;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2b2b28;
+}
+
+a:focus {
+  text-decoration: underline;
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
