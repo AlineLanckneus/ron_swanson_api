@@ -109,37 +109,49 @@ function imagePopUp(){
 
     if(inputValue1.value === 'Capitalism' || inputValue1.value === 'capitalism' && inputValue1.value !== null){
         counter++; 
-        inputValue1.style.color = 'green';
+        //inputValue1.style.color = 'green';
+        inputValue1.className += ' green';
+        inputValue1.value += '  => CORRECT!';
     } else {
-        inputValue1.style.color = 'red';
+        //inputValue1.style.color = 'red';
+        inputValue1.className += ' red';
+        inputValue1.value += '  => FALSE!';
     };
 
     if (inputValue2.value === 'alcohols' && inputValue2.value !== null){
         counter++;
-        inputValue2.style.color = 'green';
+        inputValue2.className += ' green';
+        inputValue2.value += '  => CORRECT!';
     } else{
-        inputValue2.style.color = 'red';
+        inputValue2.className += ' red';
+        inputValue2.value += '  => FALSE!';
     };
 
     if (inputValue3.value === 'Creativity' || inputValue3.value === 'creativity'&& inputValue3.value !== null){
         counter++;
-        inputValue3.style.color = 'green';
+        inputValue3.className += ' green';
+        inputValue3.value += '  => CORRECT!';
     } else {
-        inputValue3.style.color = 'red';
+        inputValue3.className += ' red';
+        inputValue3.value += '  => FALSE!';
     }; 
 
     if (inputValue4.value === 'Fishing' || inputValue4.value === 'fishing'&& inputValue4.value !== null){
         counter++;
-        inputValue4.style.color = 'green';
+        inputValue4.className += ' green';
+        inputValue4.value += '  => CORRECT!';
     } else{
-        inputValue4.style.color = 'red';
+        inputValue4.className += ' red';
+        inputValue4.value += '  => FALSE!';
     };
 
     if (inputValue5.value === 'Turkey' || inputValue5.value === 'turkey'&& inputValue5.value !== null){
         counter++;
-        inputValue5.style.color = 'green';
+        inputValue5.className += ' green';
+        inputValue5.value += '  => CORRECT!';
     } else{
-        inputValue5.style.color = 'red';
+        inputValue5.className += ' red';
+        inputValue5.value += '  => FALSE!';
     };
     console.log(counter);
 

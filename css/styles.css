@@ -69,6 +69,8 @@ header {
 
 .row__footer {
   text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .row__footer footer {
@@ -104,6 +106,20 @@ label {
 input {
   max-width: 50vw;
   padding: 1rem;
+}
+
+.green {
+  font-weight: bolder;
+  color: green;
+}
+
+.red {
+  font-weight: bolder;
+  color: red;
+}
+
+.credits {
+  font-weight: bolder;
 }
 
 a {
